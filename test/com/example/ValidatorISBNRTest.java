@@ -39,7 +39,7 @@ public class ValidatorISBNRTest {
         ValidateISBN validateISBN = new ValidateISBN();
 
         Exception exception = assertThrows(NumberFormatException.class, () -> {
-            validateISBN.check13DigitISBN("XXX-0-30-40615-9");
+            validateISBN.check13DigitISBN("helloworld");
         });
 
         String expectedMessage = "Only digits and '-' sign allowed";
